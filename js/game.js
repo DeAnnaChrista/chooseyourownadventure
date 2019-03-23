@@ -2,36 +2,36 @@
 
 var game = {
     music: "98_Lost_Mine.mp3",
-    background_image: "campus.jpg",
+    background_image: "forest.gif",
     levels: {
 
         start: {
-            message: "You attend your dream college and you're set to be a lawyer when your brother comes and tells you that your father has gone missingand he wants you to help you find him.",
+            message: "It's 2019, and the scientists have predicted that the world will end by 2060. Your children may not live to be 21.",
             choices: [
                 {
-                    text: "Go with your brother",
+                    text: "I dont care",
                     nextLevel: "leave",
                 },
 
                 {
-                    text: "Ignore him and continue college",
+                    text: "I'll take better preventative measures",
                     nextLevel: "college",
                 },
             ]
         },
 
         leave: {
-            background_image: "impala.jpg",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You travel and come across what you think might be a demon terrorizing a town",
+            background_image: "forest.gif",
+            music:  "98_Lost_Mine.mp3",
+            message: "The oceans begin to rise due to glacial melt. Centuries old diseases and gases are released",
             choices: [
                 {
-                    text: "storm in and fight",
+                    text: "Continue current course of action",
                     nextLevel: "brawn",
                 },
 
                 {
-                    text: "Stop and attempt to gather more information",
+                    text: "Stop and try to fight for your planet",
                     nextLevel: "brains",
                 },
             ]
@@ -39,16 +39,16 @@ var game = {
 
 
         college: {
-            background_image:"campus.jpg",
-            message: "You throw your brother out and stay in school until you graduate, eventually he comes back",
+            background_image:"forest.gif",
+            message: "You and friends start helping to convert others to our cause",
  choices: [
                 {
-                    text: "Go with your brother",
+                    text: "We need to fight for more",
                     nextLevel: "leave",
                 },
 
                 {
-                    text: "Tell him to leave and pursue your law career",
+                    text: "We've done enough",
                     nextLevel: "Life",
                 },
             ]
@@ -57,45 +57,80 @@ var game = {
 
      
  brains: {
-            background_image:"libary.jpg",
-            message: "You do research at the Library and discover that it's a Woman in White",
+            background_image:"forest.gif",
+            message: "They begin to build barriers for major cities who sit on water  and fight the government",
  choices: [
                 {
-                    text: "Go get salt and get attack",
-                    nextLevel: "attack",
+                    text: "I've done enough",
+                    nextLevel: "brawn",
                 },
 
                 {
-                    text: "Create a plan that might succeed.",
-                    nextLevel: "plan",
+                    text: "We can do so much more",
+                    nextLevel: "think",
                 },
             ]
         },
         
          brawn: {
-            background_image:"wiw.jpeg",
-            message: "The demon fights you and you almost don't make it out alive.",
+            background_image:"forest.gif",
+            message: "50% of the human population dies, major cities are flooded and underwater.",
  choices: [
                 {
-                    text: "Go prepare a plan",
-                    nextLevel: "brains",
+                    text: "I'm not affected by it so whatever",
+                    nextLevel: "coward",
                 },
 
                 {
-                    text: "Leave",
-                    nextLevel: "coward",
+                    text: "Start fighting for what little you have left",
+                    nextLevel: "brains",
                 },
             ]
         },
-         Life: {
+         Death: {
             background_image:"bad.jpg",
-            message: "You get married to your college sweetheart and have two kids. She is eventually killed by a demon that you should have hunted with your brother.Allow me to play you the worlds saddest song on the worlds smallest violin",
+            message: "The planet dries out due to the amount of heat trapped by greenhouse gases. You and everyone you love are buirned alive. You could have prevented this ,but now the earth is close to rivaling Mars as a heat source.",
 
             
         },
+          coward: {
+            background_image:"forest.gif",
+            message: "The earth eventually begins to get really hot all animals begin to die of heat stroke.",
+ choices: [
+                {
+                    text: "We still have plants",
+                    nextLevel: "Death",
+                },
+
+                {
+                    text: "Start fighting ",
+                    nextLevel: "think",
+                },
+            ]
+        },
         
+         think: {
+            background_image:"forest.gif",
+            message: "Working with enviornmentalists you develop a light filter and begin cloning what little animals you have left.",
+ choices: [
+                {
+                    text: "Continue with science",
+                    nextLevel: "Develop",
+                },
+
+                {
+                    text: "Venture out ",
+                    nextLevel: "Develop",
+                },
+            ]
+        },
         
-        
+          Develop: {
+            background_image:"forest.gif",
+            message: "Congrats! You've saved earth , you rose to the occasion and earths occupants thank you.",
+
+            
+        },
         
         
         
